@@ -1,10 +1,19 @@
 highlighter: rouge
 permalink: /blog/:year/:month/:day/:title/
 environment: prod
-# url: "https://alexandru-dinu.github.io/"
 url: ""
 repository: "alexandru-dinu/alexandru-dinu.github.io"
-exclude: [Dockerfile, Makefile, Gemfile, Gemfile.lock]
+exclude: [
+    Dockerfile, Makefile, Gemfile, Gemfile.lock
+]
 plugins:
-    - jekyll-sitemap
-    - jekyll-feed
+  - jekyll-scholar
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-katex
+katex:
+  js_path: "assets"  # Path used to search for katex.min.js
+  rendering_options:
+    # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
+    throw_error: false      # throwOnError - set to false if you want rendering to output error as text rather than a build error
+    error_color: "#cc0000"  # errorColor%
