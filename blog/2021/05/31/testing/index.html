@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>Hello World</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+    <meta name='description' content='Gregory Gundersen is a PhD candidate at Princeton.'>
+    <meta name='keywords' content='hello-world, testing'>
+    <meta name='author' content='Gregory Gundersen'>
+
+    <link href='/css/blog.css' rel='stylesheet'/>
+    <link href='/css/syntax.css' rel='stylesheet'/>
+    <link href='/css/markdown.css' rel='stylesheet'/>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+</head>
+<body>
+<div class='content'>
+    <div class='nav'>
+    <ul class='wrap'>
+        <li><a href='/'>Home</a></li>
+        <li><a href='https://github.com/alexandru-dinu'>GitHub</a></li>
+        <li><a href='https://twitter.com/alexandrudinu_'>Twitter</a></li>
+    </ul>
+</div>
+    <div class='front-matter'>
+        <div class='wrap'>
+            <h1>Hello World</h1>
+            <h4>This is a post solely used for testing various settings of the blog.</h4>
+            <div class='bylines'>
+                <div class='byline'>
+                    <h3>Published</h3>
+                    <p>31 May 2021</p>
+                    <h3>Keywords</h3>
+                    <p>hello-world, testing</p>
+                </div>
+            </div>
+            <div class='clear'></div>
+        </div>
+    </div>
+    <div class='wrap article'>
+        <h2 id="markdown">Markdown</h2>
+
+<p>This is a quote <code class="language-plaintext highlighter-rouge">block</code>:</p>
+
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor neque, egestas ut porta in, lacinia ac nibh. Nulla vehicula vehicula massa in ultricies. Aliquam rhoncus luctus tincidunt. <strong>Aliquam</strong> facilisis nibh erat, eget tincidunt risus vehicula a. Duis lacinia velit vel leo lacinia, nec dignissim augue accumsan. Donec aliquam fermentum suscipit. Quisque imperdiet urna ligula, ut vulputate augue rhoncus id. Integer sed arcu maximus, faucibus mauris blandit, imperdiet est.</p>
+</blockquote>
+
+<h4 id="to-do">To do</h4>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />check this</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />find nice content to add</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />learn org-mode</li>
+</ul>
+
+<h2 id="maths">Maths</h2>
+
+<ul>
+  <li>Here’s <a href="https://en.wikipedia.org/wiki/Euler%27s_identity">Euler’s identity</a> in <code class="language-plaintext highlighter-rouge">inline-mode</code>:
+$\boxed{e^{i \pi} + 1 = 0}$.</li>
+  <li>Here’s <a href="https://en.wikipedia.org/wiki/Gaussian_integral">Gaussian integral</a> in <code class="language-plaintext highlighter-rouge">display-mode</code>:</li>
+</ul>
+
+\[\int_{0}^{\infty} e^{-x^2} = \dfrac{\sqrt{\pi}}{2}\]
+
+<ul>
+  <li>Etc.</li>
+</ul>
+
+<h2 id="code">Code</h2>
+
+<p>Here’s some python code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+    <span class="n">ys</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">xs</span><span class="p">)</span>
+    <span class="n">zs</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">ys</span><span class="p">)</span>
+</code></pre></div></div>
+
+    </div>
+</div>
+</body>
+</html>

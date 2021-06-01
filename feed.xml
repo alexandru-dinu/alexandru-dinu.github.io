@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/pages/alexandru-dinu/feed.xml" rel="self" type="application/atom+xml" /><link href="/pages/alexandru-dinu/" rel="alternate" type="text/html" /><updated>2021-06-01T12:13:24-05:00</updated><id>/pages/alexandru-dinu/feed.xml</id><title type="html">alexandru-dinu.github.io</title><entry><title type="html">Hello World</title><link href="/pages/alexandru-dinu/blog/2021/05/31/testing/" rel="alternate" type="text/html" title="Hello World" /><published>2021-05-31T00:00:00-05:00</published><updated>2021-05-31T00:00:00-05:00</updated><id>/pages/alexandru-dinu/blog/2021/05/31/testing</id><content type="html" xml:base="/pages/alexandru-dinu/blog/2021/05/31/testing/">&lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
+
+&lt;p&gt;This is a quote &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;block&lt;/code&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor neque, egestas ut porta in, lacinia ac nibh. Nulla vehicula vehicula massa in ultricies. Aliquam rhoncus luctus tincidunt. &lt;strong&gt;Aliquam&lt;/strong&gt; facilisis nibh erat, eget tincidunt risus vehicula a. Duis lacinia velit vel leo lacinia, nec dignissim augue accumsan. Donec aliquam fermentum suscipit. Quisque imperdiet urna ligula, ut vulputate augue rhoncus id. Integer sed arcu maximus, faucibus mauris blandit, imperdiet est.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;to-do&quot;&gt;To do&lt;/h4&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;check this&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;find nice content to add&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;learn org-mode&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;maths&quot;&gt;Maths&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Here’s &lt;a href=&quot;https://en.wikipedia.org/wiki/Euler%27s_identity&quot;&gt;Euler’s identity&lt;/a&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inline-mode&lt;/code&gt;:
+$\boxed{e^{i \pi} + 1 = 0}$.&lt;/li&gt;
+  &lt;li&gt;Here’s &lt;a href=&quot;https://en.wikipedia.org/wiki/Gaussian_integral&quot;&gt;Gaussian integral&lt;/a&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;display-mode&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+\[\int_{0}^{\infty} e^{-x^2} = \dfrac{\sqrt{\pi}}{2}\]
+
+&lt;ul&gt;
+  &lt;li&gt;Etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Here’s some python code:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;xs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ys&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;zs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Markdown</summary></entry></feed>
