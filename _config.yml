@@ -4,7 +4,7 @@ environment: prod
 # url: "https://alexandru-dinu.github.io/"
 url: ""
 repository: "alexandru-dinu/alexandru-dinu.github.io"
-exclude: [Dockerfile, Makefile]
+exclude: [Dockerfile, Makefile, Gemfile, Gemfile.lock]
 plugins:
     - jekyll-sitemap
     - jekyll-feed
