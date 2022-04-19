@@ -11,6 +11,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-katex
+
+scholar:
+  style: apa
+
 katex:
   js_path: "assets"  # Path used to search for katex.min.js
   rendering_options:
