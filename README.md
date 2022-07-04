@@ -7,15 +7,15 @@ This allows the usage of more custom plugins compared to the [default of GitHub 
 Instructions can be found [here](https://tiefenauer.github.io/blog/gh-pages-plugins/).
 
 ```
-┌────────────────────┐     ┌──────────────────┐
-│  branch: sources   │   ┌►│ branch: master   │
-├────────────────────┤   │ ├──────────────────┤
-│                    │   │ │  ./index.html    │
-│      ./_posts      │   │ │  ./robots.txt    │
-│         .          │   │ │  ./sitemap.xml   │
-│         .          │   │ │  ...             │
-│         .          │   │ └──────────────────┘
-│      ./_site ──────┼───┘
-│                    │
-└────────────────────┘
+┌───────────────────┐     ┌────────────────┐
+│  branch: sources  │   ┌►│ branch: master │
+├───────────────────┤   │ ├────────────────┤
+│                   │   │ │  ./index.html  │
+│      ./_posts     │   │ │  ./robots.txt  │
+│         .         │   │ │  ./sitemap.xml │
+│         .         │   │ │  ...           │
+│         .         │   │ └────────────────┘
+│      ./_site ─────┼───┘
+│                   │
+└───────────────────┘
 ```
