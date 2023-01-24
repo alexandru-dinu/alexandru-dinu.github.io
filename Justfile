@@ -2,7 +2,7 @@ set positional-arguments
 
 image := "hugo:latest"
 
-build:
+build-hugo-image:
     docker build . --tag {{image}}
 
 @run *args='':
@@ -12,3 +12,5 @@ build:
         -p 1313:1313 \
         {{image}} \
         $@
+
+build-site: run
