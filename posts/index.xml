@@ -6,14 +6,25 @@
     <description>Recent content in Posts on Alexandru Dinu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://alexandru-dinu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Feb 2023 20:29:54 +0000</lastBuildDate><atom:link href="https://alexandru-dinu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Setup</title>
+      <link>https://alexandru-dinu.github.io/posts/blog_setup/</link>
+      <pubDate>Fri, 03 Feb 2023 20:29:54 +0000</pubDate>
+      
+      <guid>https://alexandru-dinu.github.io/posts/blog_setup/</guid>
+      <description>How to I recently moved my blog from Jekyll to Hugo. It wasn&amp;rsquo;t a particularly hard decision to make as I was not dependent of any of Jekyll features. I just want a simple to configure &amp;amp; minimalistic setup.
+I am using a Hugo docker image:
+FROM klakegg/hugo:debian RUN apt update -y \ &amp;amp;&amp;amp; apt upgrade -y \ &amp;amp;&amp;amp; apt install -y git </description>
+    </item>
+    
     <item>
       <title>Thoughts</title>
       <link>https://alexandru-dinu.github.io/posts/thoughts/</link>
       <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://alexandru-dinu.github.io/posts/thoughts/</guid>
-      <description>When you&amp;rsquo;re thirsty for soda, just drink sparkling water instead &amp;ndash; it&amp;rsquo;s the fizziness that you crave. Always, always, apply what you learn &amp;ndash; don&amp;rsquo;t fall into tutorial trap, it&amp;rsquo;s a subtle form of procrastination. Spreadsheets are extremely good for aggregating experiment data. jq and xsv are your friends. Don&amp;rsquo;t write one-off commands and then rely on history to find them &amp;ndash; start with a script instead. Try to learn various programming paradigms &amp;ndash; it enables you to approach problems from different perspectives.</description>
+      <description>Building momentum and having a tight feedback loop are essential for productivity. When you&amp;rsquo;re thirsty for soda, just drink sparkling water instead &amp;ndash; it&amp;rsquo;s the fizziness that you crave. Always, always, apply what you learn &amp;ndash; don&amp;rsquo;t fall into tutorial trap, it&amp;rsquo;s a subtle form of procrastination. Spreadsheets are extremely good for aggregating experiment data. jq and xsv are your friends. Don&amp;rsquo;t write one-off commands and then rely on history to find them &amp;ndash; start with a script instead.</description>
     </item>
     
   </channel>
