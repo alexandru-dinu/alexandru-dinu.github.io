@@ -2,6 +2,7 @@
 title: "Blog Setup"
 date: 2023-02-03T20:29:54Z
 draft: false
+tags: ["how-to"]
 ---
 
 # How to
