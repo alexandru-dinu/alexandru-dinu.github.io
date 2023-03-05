@@ -1,8 +1,12 @@
 ---
 title: "Testing"
 date: 2021-05-31
-draft: true
+draft: false
+math: true
+katex: true
 ---
+
+This post tests various aspects of the blog's theme.
 
 ## Markdown
 
@@ -13,17 +17,16 @@ This is a quote `block`:
 #### To do
 - [x] check this
 - [ ] find nice content to add
-- [ ] learn org-mode
-- [ ] citations
+- [ ] add citations
 
 ## Maths
 
 - Here's [Euler's identity](https://en.wikipedia.org/wiki/Euler%27s_identity) in `inline-mode`:
-$\boxed{e^{i \pi} + 1 = 0}$.
+$e^{i \pi} + 1 = 0$.
 - Here's [Gaussian integral](https://en.wikipedia.org/wiki/Gaussian_integral) in `display-mode`:
 
 $$
-\int_{0}^{\infty} e^{-x^2} = \dfrac{\sqrt{\pi}}{2}
+\int_{0}^{\infty} e^{-x^2} \mathrm{d}x = \dfrac{\sqrt{\pi}}{2}
 $$
 
 
