@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>how-to on Alexandru Dinu</title>
+    <link>https://alexandru-dinu.github.io/tags/how-to/</link>
+    <description>Recent content in how-to on Alexandru Dinu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Feb 2023 20:29:54 +0000</lastBuildDate><atom:link href="https://alexandru-dinu.github.io/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Setup</title>
+      <link>https://alexandru-dinu.github.io/posts/blog_setup/</link>
+      <pubDate>Fri, 03 Feb 2023 20:29:54 +0000</pubDate>
+      
+      <guid>https://alexandru-dinu.github.io/posts/blog_setup/</guid>
+      <description> How to Link to heading I recently moved my blog from Jekyll to Hugo. It wasn&amp;rsquo;t a particularly hard decision to make as I was not dependent of any of Jekyll features. I just want a simple to configure &amp;amp; minimalistic setup.
+I am using a Hugo docker image:
+FROM klakegg/hugo:debian RUN apt update -y \ &amp;amp;&amp;amp; apt upgrade -y \ &amp;amp;&amp;amp; apt install -y git </description>
+    </item>
+    
+  </channel>
+</rss>
