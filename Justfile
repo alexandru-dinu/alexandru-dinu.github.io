@@ -15,3 +15,9 @@ serve:
 
 build:
     just run hugo
+
+push:
+    (cd public/ \
+        && git add . \
+        && git commit -m "[$(date +'%Y-%m-%dT%H:%M:%S%:z')] rebuild site" \
+        && git push -u origin gh-pages)
