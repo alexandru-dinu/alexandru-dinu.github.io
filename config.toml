@@ -10,7 +10,7 @@ style = "github-dark"
 
 [params]
   author = "Alexandru Dinu"
-  description = "John Doe's personal website"
+  description = "Alex's personal website"
   keywords = "blog,developer,personal"
   colorScheme = "auto"
   hidecolorschemetoggle = false
