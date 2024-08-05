@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alexandru Dinu</title>
-    <link>https://alexandru-dinu.github.io/</link>
-    <description>Recent content on Alexandru Dinu</description>
+    <title>Blogs on Alexandru Dinu</title>
+    <link>https://alexandru-dinu.github.io/blog/</link>
+    <description>Recent content in Blogs on Alexandru Dinu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://alexandru-dinu.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About me</title>
-      <link>https://alexandru-dinu.github.io/about/</link>
-      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://alexandru-dinu.github.io/about/</guid>
-      <description>Hello :wave:, welcome to my blog!</description>
-    </item>
+    <lastBuildDate>Fri, 03 Feb 2023 20:29:54 +0000</lastBuildDate>
+    <atom:link href="https://alexandru-dinu.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog Setup</title>
       <link>https://alexandru-dinu.github.io/blog/blog_setup/</link>
