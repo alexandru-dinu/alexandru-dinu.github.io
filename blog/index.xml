@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Alexandru Dinu</title>
-    <link>https://alexandru-dinu.github.io/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Blogs on Alexandru Dinu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 03 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://alexandru-dinu.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog Setup</title>
-      <link>https://alexandru-dinu.github.io/blog/blog_setup/</link>
+      <link>http://localhost:1313/blog/blog_setup/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://alexandru-dinu.github.io/blog/blog_setup/</guid>
+      <guid>http://localhost:1313/blog/blog_setup/</guid>
       <description>Hugo Link to heading WIP!&#xA;Example Link to heading This section tests various writing features of the blog&amp;rsquo;s theme.&#xA;Markdown Link to heading This is a quote block:&#xA;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor neque, egestas ut porta in, lacinia ac nibh. Nulla vehicula vehicula massa in ultricies. Aliquam rhoncus luctus tincidunt. Aliquam facilisis nibh erat, eget tincidunt risus vehicula a. Duis lacinia velit vel leo lacinia, nec dignissim augue accumsan.</description>
     </item>
     <item>
       <title>Thoughts</title>
-      <link>https://alexandru-dinu.github.io/blog/thoughts/</link>
+      <link>http://localhost:1313/blog/thoughts/</link>
       <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://alexandru-dinu.github.io/blog/thoughts/</guid>
+      <guid>http://localhost:1313/blog/thoughts/</guid>
       <description>Building momentum and having a tight feedback loop are essential for productivity. When you&amp;rsquo;re thirsty for soda, just drink sparkling water instead &amp;ndash; it&amp;rsquo;s the fizziness that you crave. Always, always, apply what you learn &amp;ndash; don&amp;rsquo;t fall into tutorial trap, it&amp;rsquo;s a subtle form of procrastination. Spreadsheets are extremely good for aggregating experiment data. jq and xsv are your friends. Don&amp;rsquo;t write one-off commands and then rely on history to find them &amp;ndash; start with a script instead.</description>
     </item>
   </channel>
