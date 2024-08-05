@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <title>
   Blog Setup · Alexandru Dinu
 </title>
@@ -13,35 +13,38 @@
 
 
 <meta name="author" content="Alexandru Dinu">
-<meta name="description" content=" How to Link to heading I recently moved my blog from Jekyll to Hugo. It wasn&rsquo;t a particularly hard decision to make as I was not dependent of any of Jekyll features. I just want a simple to configure &amp; minimalistic setup.
-I am using a Hugo docker image:
-FROM klakegg/hugo:debian RUN apt update -y \ &amp;&amp; apt upgrade -y \ &amp;&amp; apt install -y git ">
+<meta name="description" content="Hugo Link to heading WIP!
+Example Link to heading This section tests various writing features of the blog&rsquo;s theme.
+Markdown Link to heading This is a quote block:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor neque, egestas ut porta in, lacinia ac nibh. Nulla vehicula vehicula massa in ultricies. Aliquam rhoncus luctus tincidunt. Aliquam facilisis nibh erat, eget tincidunt risus vehicula a. Duis lacinia velit vel leo lacinia, nec dignissim augue accumsan.">
 <meta name="keywords" content="blog,developer,personal">
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Blog Setup">
-  <meta name="twitter:description" content=" How to Link to heading I recently moved my blog from Jekyll to Hugo. It wasn’t a particularly hard decision to make as I was not dependent of any of Jekyll features. I just want a simple to configure &amp; minimalistic setup.
-I am using a Hugo docker image:
-FROM klakegg/hugo:debian RUN apt update -y \ &amp;&amp; apt upgrade -y \ &amp;&amp; apt install -y git ">
+  <meta name="twitter:description" content="Hugo Link to heading WIP!
+Example Link to heading This section tests various writing features of the blog’s theme.
+Markdown Link to heading This is a quote block:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor neque, egestas ut porta in, lacinia ac nibh. Nulla vehicula vehicula massa in ultricies. Aliquam rhoncus luctus tincidunt. Aliquam facilisis nibh erat, eget tincidunt risus vehicula a. Duis lacinia velit vel leo lacinia, nec dignissim augue accumsan.">
 
-<meta property="og:url" content="http://localhost:1313/posts/blog_setup/">
+<meta property="og:url" content="https://alexandru-dinu.github.io/posts/blog_setup/">
   <meta property="og:site_name" content="Alexandru Dinu">
   <meta property="og:title" content="Blog Setup">
-  <meta property="og:description" content=" How to Link to heading I recently moved my blog from Jekyll to Hugo. It wasn’t a particularly hard decision to make as I was not dependent of any of Jekyll features. I just want a simple to configure &amp; minimalistic setup.
-I am using a Hugo docker image:
-FROM klakegg/hugo:debian RUN apt update -y \ &amp;&amp; apt upgrade -y \ &amp;&amp; apt install -y git ">
+  <meta property="og:description" content="Hugo Link to heading WIP!
+Example Link to heading This section tests various writing features of the blog’s theme.
+Markdown Link to heading This is a quote block:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor neque, egestas ut porta in, lacinia ac nibh. Nulla vehicula vehicula massa in ultricies. Aliquam rhoncus luctus tincidunt. Aliquam facilisis nibh erat, eget tincidunt risus vehicula a. Duis lacinia velit vel leo lacinia, nec dignissim augue accumsan.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2023-02-03T20:29:54+00:00">
-    <meta property="article:modified_time" content="2023-02-03T20:29:54+00:00">
+    <meta property="article:published_time" content="2023-02-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-02-03T00:00:00+00:00">
     <meta property="article:tag" content="How-To">
 
 
 
 
-<link rel="canonical" href="http://localhost:1313/posts/blog_setup/">
+<link rel="canonical" href="https://alexandru-dinu.github.io/posts/blog_setup/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -51,7 +54,7 @@ FROM klakegg/hugo:debian RUN apt update -y \ &amp;&amp; apt upgrade -y \ &amp;&a
 
   
   
-  <link rel="stylesheet" href="/css/coder.css" media="screen">
+  <link rel="stylesheet" href="/css/coder.min.38c4552ac40f9ae3408bad40358f654ebd8804412fe74ed56f2d6c8a7af82dd3.css" integrity="sha256-OMRVKsQPmuNAi61ANY9lTr2IBEEv507Vby1sinr4LdM=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -61,7 +64,7 @@ FROM klakegg/hugo:debian RUN apt update -y \ &amp;&amp; apt upgrade -y \ &amp;&a
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -109,7 +112,7 @@ FROM klakegg/hugo:debian RUN apt update -y \ &amp;&amp; apt upgrade -y \ &amp;&a
     <nav class="navigation">
   <section class="container">
     
-    <a class="navigation-title" href="http://localhost:1313/">
+    <a class="navigation-title" href="https://alexandru-dinu.github.io/">
       Alexandru Dinu
     </a>
     
@@ -122,7 +125,11 @@ FROM klakegg/hugo:debian RUN apt update -y \ &amp;&amp; apt upgrade -y \ &amp;&a
         
           
             <li class="navigation-item">
-              <a class="navigation-link " href="/blog/">Blog</a>
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
             </li>
           
             <li class="navigation-item">
@@ -144,7 +151,7 @@ FROM klakegg/hugo:debian RUN apt update -y \ &amp;&amp; apt upgrade -y \ &amp;&a
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="http://localhost:1313/posts/blog_setup/">
+            <a class="title-link" href="https://alexandru-dinu.github.io/posts/blog_setup/">
               Blog Setup
             </a>
           </h1>
@@ -153,7 +160,7 @@ FROM klakegg/hugo:debian RUN apt update -y \ &amp;&amp; apt upgrade -y \ &amp;&a
           <div class="date">
             <span class="posted-on">
               <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-              <time datetime="2023-02-03T20:29:54Z">
+              <time datetime="2023-02-03T00:00:00Z">
                 February 3, 2023
               </time>
             </span>
@@ -175,22 +182,83 @@ FROM klakegg/hugo:debian RUN apt update -y \ &amp;&amp; apt upgrade -y \ &amp;&a
 
       <div class="post-content">
         
-        <h1 id="how-to">
-  How to
-  <a class="heading-link" href="#how-to">
+        <h1 id="hugo">
+  Hugo
+  <a class="heading-link" href="#hugo">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>I recently moved my blog from Jekyll to Hugo. It wasn&rsquo;t a particularly hard decision to make as I was not dependent of any of Jekyll features.
-I just want a simple to configure &amp; minimalistic setup.</p>
-<p>I am using a Hugo docker image:</p>
-<pre tabindex="0"><code>FROM klakegg/hugo:debian
-
-RUN apt update -y \
-    &amp;&amp; apt upgrade -y \
-    &amp;&amp; apt install -y git
-</code></pre>
+<p>WIP!</p>
+<h1 id="example">
+  Example
+  <a class="heading-link" href="#example">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>This section tests various writing features of the blog&rsquo;s theme.</p>
+<h2 id="markdown">
+  Markdown
+  <a class="heading-link" href="#markdown">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This is a quote <code>block</code>:</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor neque, egestas ut porta in, lacinia ac nibh. Nulla vehicula vehicula massa in ultricies. Aliquam rhoncus luctus tincidunt. <strong>Aliquam</strong> facilisis nibh erat, eget tincidunt risus vehicula a. Duis lacinia velit vel leo lacinia, nec dignissim augue accumsan. Donec aliquam fermentum suscipit. Quisque imperdiet urna ligula, ut vulputate augue rhoncus id. Integer sed arcu maximus, faucibus mauris blandit, imperdiet est.</p>
+</blockquote>
+<h4 id="to-do">
+  To do
+  <a class="heading-link" href="#to-do">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> check this</li>
+<li><input disabled="" type="checkbox"> find nice content to add</li>
+<li><input disabled="" type="checkbox"> add citations</li>
+</ul>
+<h2 id="maths">
+  Maths
+  <a class="heading-link" href="#maths">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>Here&rsquo;s <a href="https://en.wikipedia.org/wiki/Euler%27s_identity"  class="external-link" target="_blank" rel="noopener">Euler&rsquo;s identity</a> in <code>inline-mode</code>:
+$e^{i \pi} + 1 = 0$.</li>
+<li>Here&rsquo;s <a href="https://en.wikipedia.org/wiki/Gaussian_integral"  class="external-link" target="_blank" rel="noopener">Gaussian integral</a> in <code>display-mode</code>:</li>
+</ul>
+<p>$$
+\int_{0}^{\infty} e^{-x^2} \mathrm{d}x = \dfrac{\sqrt{\pi}}{2}
+$$</p>
+<h2 id="code">
+  Code
+  <a class="heading-link" href="#code">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Here&rsquo;s some Python code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Foo</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">def</span> __init__(self, <span style="color:#ff7b72;font-weight:bold">*</span>args, <span style="color:#ff7b72;font-weight:bold">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">if</span> __name__ <span style="color:#ff7b72;font-weight:bold">==</span> <span style="color:#a5d6ff">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    xs <span style="color:#ff7b72;font-weight:bold">=</span> [<span style="color:#a5d6ff">1</span>, <span style="color:#a5d6ff">2</span>, <span style="color:#a5d6ff">3</span>]
+</span></span><span style="display:flex;"><span>    ys <span style="color:#ff7b72;font-weight:bold">=</span> map(<span style="color:#ff7b72">lambda</span> x: x <span style="color:#ff7b72;font-weight:bold">+</span> <span style="color:#a5d6ff">1</span>, xs)
+</span></span><span style="display:flex;"><span>    zs <span style="color:#ff7b72;font-weight:bold">=</span> sum(ys)
+</span></span></code></pre></div><p>and some Haskell:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#d2a8ff;font-weight:bold">fib</span> <span style="color:#ff7b72;font-weight:bold">::</span> <span style="color:#ff7b72">Num</span> a <span style="color:#ff7b72;font-weight:bold">=&gt;</span> [a]
+</span></span><span style="display:flex;"><span><span style="color:#d2a8ff;font-weight:bold">fib</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">1</span><span style="color:#ff7b72">:</span><span style="color:#a5d6ff">1</span><span style="color:#ff7b72">:</span>zipWith (<span style="color:#ff7b72;font-weight:bold">+</span>) fib (tail fib)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#d2a8ff;font-weight:bold">take</span> <span style="color:#a5d6ff">10</span> fib
+</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">-- [1,1,2,3,5,8,13,21,34,55]</span>
+</span></span></code></pre></div>
       </div>
 
 
@@ -209,7 +277,23 @@ RUN apt update -y \
       </footer>
     </article>
 
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
   </section>
 
     </div>
@@ -233,7 +317,7 @@ RUN apt update -y \
 
   
   
-  <script src="/js/coder.js"></script>
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
   
 
   
