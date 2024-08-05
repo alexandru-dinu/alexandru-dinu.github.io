@@ -1,6 +1,6 @@
 set positional-arguments
 
-image := "hugomods/hugo:go-git"
+image := "hugomods/hugo:0.131.0"
 
 @run *args:
     docker run --rm -t \
