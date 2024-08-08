@@ -194,13 +194,32 @@ which resides in the <a href="https://github.com/alexandru-dinu/alexandru-dinu.g
 └──────────────┘    └──────────────────┘
 </code></pre><p>In the GitHub repo settings, under &ldquo;Page&rdquo;, you have to set the branch from which the site is being built, in my case: <code>gh-pages</code>.</p>
 <p>For site generation, I am using <a href="https://gohugo.io/"  class="external-link" target="_blank" rel="noopener">hugo</a> with the <a href="https://github.com/luizdepra/hugo-coder"  class="external-link" target="_blank" rel="noopener">hugo-coder</a> theme.</p>
-<p>Instead of dealing with Go and hugo installation locally, I use a <a href="https://hub.docker.com/r/hugomods/hugo"  class="external-link" target="_blank" rel="noopener">docker image</a> which provides <code>hugo</code> and allows me to <code>serve</code> and <code>build</code> and the blog. This is defined in the <a href="../../Justfile" >Justfile</a>.</p>
-<p>When I&rsquo;m ready to push the built site to the <code>gh-pages</code> branch, I use the following command which constructs standardised commit messages:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">(</span>cd public/ <span style="color:#79c0ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#79c0ff"></span>    <span style="color:#ff7b72;font-weight:bold">&amp;&amp;</span> git add . <span style="color:#79c0ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#79c0ff"></span>    <span style="color:#ff7b72;font-weight:bold">&amp;&amp;</span> git commit -m <span style="color:#a5d6ff">&#34;[</span><span style="color:#ff7b72">$(</span>date +<span style="color:#a5d6ff">&#39;%Y-%m-%dT%H:%M:%S%:z&#39;</span><span style="color:#ff7b72">)</span><span style="color:#a5d6ff">] rebuild site&#34;</span> <span style="color:#79c0ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#79c0ff"></span>    <span style="color:#ff7b72;font-weight:bold">&amp;&amp;</span> git push -u origin gh-pages<span style="color:#ff7b72;font-weight:bold">)</span>
-</span></span></code></pre></div><h1 id="example">
+<p>Instead of dealing with Go and hugo installation locally, I use a <a href="https://hub.docker.com/r/hugomods/hugo"  class="external-link" target="_blank" rel="noopener">docker image</a> which provides <code>hugo</code> and allows me to <code>serve</code> and <code>build</code> and the blog. This is defined in the <a href="https://github.com/alexandru-dinu/alexandru-dinu.github.io/blob/main/Justfile"  class="external-link" target="_blank" rel="noopener">Justfile</a>:</p>
+<pre tabindex="0"><code>set positional-arguments
+
+image := &#34;hugomods/hugo:0.131.0&#34;
+
+@run *args:
+    docker run --rm -t \
+        -u $(id -u):$(id -g) \
+        -v `pwd`:/src \
+        -p 1313:1313 \
+        {{image}} \
+        $@
+
+serve:
+    just run hugo server --bind 0.0.0.0
+
+build:
+    just run hugo
+
+push:
+    (cd public/ \
+        &amp;&amp; git add . \
+        &amp;&amp; git commit -m &#34;[$(date +&#39;%Y-%m-%dT%H:%M:%S%:z&#39;)] rebuild site&#34; \
+        &amp;&amp; git push -u origin gh-pages)
+</code></pre><p>When I&rsquo;m ready to push the built site to the <code>gh-pages</code> branch, I just use the <code>push</code> rule which.</p>
+<h1 id="example">
   Example
   <a class="heading-link" href="#example">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
