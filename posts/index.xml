@@ -6,21 +6,21 @@
     <description>Recent content in Posts on Alexandru Dinu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://alexandru-dinu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thoughts</title>
+      <link>https://alexandru-dinu.github.io/posts/thoughts/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://alexandru-dinu.github.io/posts/thoughts/</guid>
+      <description>Building momentum and having a tight feedback loop are essential for productivity &amp;ndash; see How to Build Anything Extremely Quickly. When you&amp;rsquo;re thirsty for soda, just drink sparkling water instead &amp;ndash; it&amp;rsquo;s the fizziness that you crave. Always, always, apply what you learn &amp;ndash; don&amp;rsquo;t fall into tutorial trap, it&amp;rsquo;s a subtle form of procrastination. Spreadsheets are extremely good for aggregating experiment data. jq and xsv are your friends. Don&amp;rsquo;t write one-off commands and then rely on history to find them &amp;ndash; start with a script instead.</description>
+    </item>
     <item>
       <title>Blog Setup</title>
       <link>https://alexandru-dinu.github.io/posts/blog_setup/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://alexandru-dinu.github.io/posts/blog_setup/</guid>
       <description>Setup Link to heading This repo is organised with two branches: the main branch contains code needed to build the final site which resides in the gh-pages branch, following instructions from here:&#xA;┌──────────────┐ ┌──────────────────┐ │ branch: main │ ┌►│ branch: gh-pages │ ├──────────────┤ │ ├──────────────────┤ │ ./content │ │ │ ./index.html │ │ ... │ │ │ ./sitemap.xmp │ │ ./public ────┼──┘ │ ... │ └──────────────┘ └──────────────────┘ In the GitHub repo settings, under &amp;ldquo;Page&amp;rdquo;, you have to set the branch from which the site is being built, in my case: gh-pages.</description>
-    </item>
-    <item>
-      <title>Thoughts</title>
-      <link>https://alexandru-dinu.github.io/posts/thoughts/</link>
-      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://alexandru-dinu.github.io/posts/thoughts/</guid>
-      <description>Building momentum and having a tight feedback loop are essential for productivity. When you&amp;rsquo;re thirsty for soda, just drink sparkling water instead &amp;ndash; it&amp;rsquo;s the fizziness that you crave. Always, always, apply what you learn &amp;ndash; don&amp;rsquo;t fall into tutorial trap, it&amp;rsquo;s a subtle form of procrastination. Spreadsheets are extremely good for aggregating experiment data. jq and xsv are your friends. Don&amp;rsquo;t write one-off commands and then rely on history to find them &amp;ndash; start with a script instead.</description>
     </item>
   </channel>
 </rss>
