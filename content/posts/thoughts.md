@@ -1,10 +1,10 @@
 ---
 title: "Thoughts"
-date: 2022-07-04
+date: 2024-08-08
 draft: false
 ---
 
-- Building momentum and having a tight feedback loop are essential for productivity.
+- Building momentum and having a tight feedback loop are essential for productivity -- see [How to Build Anything Extremely Quickly](https://learnhowtolearn.org/how-to-build-extremely-quickly/).
 - When you're thirsty for soda, just drink sparkling water instead -- it's the fizziness that you crave.
 - Always, **_always_**, apply what you learn -- don't fall into [tutorial trap][1], it's a subtle form of [procrastination][2].
 - Spreadsheets are extremely good for aggregating experiment data.
