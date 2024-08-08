@@ -27,7 +27,7 @@
       <link>https://alexandru-dinu.github.io/posts/blog_setup/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://alexandru-dinu.github.io/posts/blog_setup/</guid>
-      <description>Hugo Link to heading WIP!&#xA;Example Link to heading This section tests various writing features of the blog&amp;rsquo;s theme.&#xA;Markdown Link to heading This is a quote block:&#xA;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor neque, egestas ut porta in, lacinia ac nibh. Nulla vehicula vehicula massa in ultricies. Aliquam rhoncus luctus tincidunt. Aliquam facilisis nibh erat, eget tincidunt risus vehicula a. Duis lacinia velit vel leo lacinia, nec dignissim augue accumsan.</description>
+      <description>Setup Link to heading This repo is organised with two branches: the main branch contains code needed to build the final site which resides in the gh-pages branch, following instructions from here:&#xA;┌──────────────┐ ┌──────────────────┐ │ branch: main │ ┌►│ branch: gh-pages │ ├──────────────┤ │ ├──────────────────┤ │ ./content │ │ │ ./index.html │ │ ... │ │ │ ./sitemap.xmp │ │ ./public ────┼──┘ │ ... │ └──────────────┘ └──────────────────┘ In the GitHub repo settings, under &amp;ldquo;Page&amp;rdquo;, you have to set the branch from which the site is being built, in my case: gh-pages.</description>
     </item>
     <item>
       <title>Thoughts</title>
