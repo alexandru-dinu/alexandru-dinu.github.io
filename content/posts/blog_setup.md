@@ -5,9 +5,54 @@ draft = false
 tags = ["how-to"]
 +++
 
-# Hugo
+# Setup
 
-WIP!
+[This repo](https://github.com/alexandru-dinu/alexandru-dinu.github.io) is organised with two branches: the [main branch][1] contains code needed to build the final site
+which resides in the [gh-pages branch][2], following instructions from [here](https://tiefenauer.github.io/blog/gh-pages-plugins/):
+```
+┌──────────────┐    ┌──────────────────┐
+│ branch: main │  ┌►│ branch: gh-pages │
+├──────────────┤  │ ├──────────────────┤
+│ ./content    │  │ │  ./index.html    │
+│ ...          │  │ │  ./sitemap.xmp   │
+│ ./public ────┼──┘ │  ...             │
+└──────────────┘    └──────────────────┘
+```
+In the GitHub repo settings, under "Page", you have to set the branch from which the site is being built, in my case: `gh-pages`.
+
+For site generation, I am using [hugo](https://gohugo.io/) with the [hugo-coder](https://github.com/luizdepra/hugo-coder) theme.
+
+Instead of dealing with Go and hugo installation locally, I use a [docker image](https://hub.docker.com/r/hugomods/hugo) which provides `hugo` and allows me to `serve` and `build` and the blog. This is defined in the [Justfile](https://github.com/alexandru-dinu/alexandru-dinu.github.io/blob/main/Justfile):
+```
+set positional-arguments
+
+image := "hugomods/hugo:0.131.0"
+
+@run *args:
+    docker run --rm -t \
+        -u $(id -u):$(id -g) \
+        -v `pwd`:/src \
+        -p 1313:1313 \
+        {{image}} \
+        $@
+
+serve:
+    just run hugo server --bind 0.0.0.0
+
+build:
+    just run hugo
+
+push:
+    (cd public/ \
+        && git add . \
+        && git commit -m "[$(date +'%Y-%m-%dT%H:%M:%S%:z')] rebuild site" \
+        && git push -u origin gh-pages)
+```
+
+When I'm ready to push the built site to the `gh-pages` branch, I _just_ use the `push` rule.
+
+[1]: https://github.com/alexandru-dinu/alexandru-dinu.github.io/tree/main
+[2]: https://github.com/alexandru-dinu/alexandru-dinu.github.io/tree/gh-pages
 
 # Example
 
