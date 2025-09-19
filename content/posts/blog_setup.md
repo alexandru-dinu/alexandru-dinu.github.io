@@ -1,6 +1,6 @@
 +++
 title = "Blog Setup"
-date = "2023-02-03"
+date = "2025-09-19"
 draft = false
 tags = ["how-to"]
 +++
@@ -18,6 +18,8 @@ which resides in the [gh-pages branch][2], following instructions from [here](ht
 │ ./public ────┼──┘ │  ...             │
 └──────────────┘    └──────────────────┘
 ```
+Essentially, the `public/` directory is a new git repo with the same remote as the main repo, but pointing to the `gh-pages` branch.
+
 In the GitHub repo settings, under "Page", you have to set the branch from which the site is being built, in my case: `gh-pages`.
 
 For site generation, I am using [hugo](https://gohugo.io/) with the [hugo-coder](https://github.com/luizdepra/hugo-coder) theme.
@@ -26,8 +28,9 @@ Instead of dealing with Go and hugo installation locally, I use a [docker image]
 ```
 set positional-arguments
 
-image := "hugomods/hugo:0.131.0"
+image := "ghcr.io/gohugoio/hugo:v0.150.0"
 
+# provides `hugo`
 @run *args:
     docker run --rm -t \
         -u $(id -u):$(id -g) \
@@ -37,15 +40,15 @@ image := "hugomods/hugo:0.131.0"
         $@
 
 serve:
-    just run hugo server --bind 0.0.0.0
+    just run server --source /src --bind 0.0.0.0
 
 build:
-    just run hugo
+    just run build --source /src
 
 push:
     (cd public/ \
         && git add . \
-        && git commit -m "[$(date +'%Y-%m-%dT%H:%M:%S%:z')] rebuild site" \
+        && git commit -m "[$(date +'%Y-%m-%dT%H:%M:%S')] rebuild site" \
         && git push -u origin gh-pages)
 ```
 
