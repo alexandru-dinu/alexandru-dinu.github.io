@@ -13,9 +13,25 @@
 
 
 <meta name="author" content="Alexandru Dinu">
-<meta name="description" content="Setup Link to heading This repo is organised with two branches: the main branch contains code needed to build the final site which resides in the gh-pages branch, following instructions from here:
-┌──────────────┐ ┌──────────────────┐ │ branch: main │ ┌►│ branch: gh-pages │ ├──────────────┤ │ ├──────────────────┤ │ ./content │ │ │ ./index.html │ │ ... │ │ │ ./sitemap.xmp │ │ ./public ────┼──┘ │ ... │ └──────────────┘ └──────────────────┘ In the GitHub repo settings, under &ldquo;Page&rdquo;, you have to set the branch from which the site is being built, in my case: gh-pages.">
+<meta name="description" content="
+  Setup
+  
+    
+    Link to heading
+  
+
+This repo is organised with two branches: the main branch contains code needed to build the final site
+which resides in the gh-pages branch, following instructions from here:
+┌──────────────┐    ┌──────────────────┐
+│ branch: main │  ┌►│ branch: gh-pages │
+├──────────────┤  │ ├──────────────────┤
+│ ./content    │  │ │  ./index.html    │
+│ ...          │  │ │  ./sitemap.xmp   │
+│ ./public ────┼──┘ │  ...             │
+└──────────────┘    └──────────────────┘
+In the GitHub repo settings, under &ldquo;Page&rdquo;, you have to set the branch from which the site is being built, in my case: gh-pages.">
 <meta name="keywords" content="blog,developer,personal">
+
 
 
   <meta name="twitter:card" content="summary">
@@ -48,7 +64,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.335ad58c3d64a264cace0e456e88aa3aca2fa2ac5ac7c94f8fcd3eae020c816e.css" integrity="sha256-M1rVjD1komTKzg5FboiqOsovoqxax8lPj80&#43;rgIMgW4=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.583800d0eab80e7d6e2ec82269bed8e55ecc09732236818c75e03305d3a04e27.css" integrity="sha256-WDgA0Oq4Dn1uLsgiab7Y5V7MCXMiNoGMdeAzBdOgTic=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -58,7 +74,7 @@
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.min.df6e5879d26fc103ba4f93e2a20627f18ad5ed2c5543c5b594bd4c5301a10685.css" integrity="sha256-325YedJvwQO6T5PiogYn8YrV7SxVQ8W1lL1MUwGhBoU=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -236,8 +252,7 @@ push:
 </h2>
 <p>This is a quote <code>block</code>:</p>
 <blockquote>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor neque, egestas ut porta in, lacinia ac nibh. Nulla vehicula vehicula massa in ultricies. Aliquam rhoncus luctus tincidunt. <strong>Aliquam</strong> facilisis nibh erat, eget tincidunt risus vehicula a. Duis lacinia velit vel leo lacinia, nec dignissim augue accumsan. Donec aliquam fermentum suscipit. Quisque imperdiet urna ligula, ut vulputate augue rhoncus id. Integer sed arcu maximus, faucibus mauris blandit, imperdiet est.</p>
-</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor neque, egestas ut porta in, lacinia ac nibh. Nulla vehicula vehicula massa in ultricies. Aliquam rhoncus luctus tincidunt. <strong>Aliquam</strong> facilisis nibh erat, eget tincidunt risus vehicula a. Duis lacinia velit vel leo lacinia, nec dignissim augue accumsan. Donec aliquam fermentum suscipit. Quisque imperdiet urna ligula, ut vulputate augue rhoncus id. Integer sed arcu maximus, faucibus mauris blandit, imperdiet est.</p></blockquote>
 <h4 id="to-do">
   To do
   <a class="heading-link" href="#to-do">
@@ -274,10 +289,10 @@ $$</p>
 </h2>
 <p>Here&rsquo;s some Python code:</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Foo</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">def</span> __init__(self, <span style="color:#ff7b72;font-weight:bold">*</span>args, <span style="color:#ff7b72;font-weight:bold">**</span>kwargs):
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">def</span> <span style="color:#d2a8ff;font-weight:bold">__init__</span>(self, <span style="color:#ff7b72;font-weight:bold">*</span>args, <span style="color:#ff7b72;font-weight:bold">**</span>kwargs):
 </span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">pass</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">if</span> __name__ <span style="color:#ff7b72;font-weight:bold">==</span> <span style="color:#a5d6ff">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">if</span> <span style="color:#79c0ff">__name__</span> <span style="color:#ff7b72;font-weight:bold">==</span> <span style="color:#a5d6ff">&#34;__main__&#34;</span>:
 </span></span><span style="display:flex;"><span>    xs <span style="color:#ff7b72;font-weight:bold">=</span> [<span style="color:#a5d6ff">1</span>, <span style="color:#a5d6ff">2</span>, <span style="color:#a5d6ff">3</span>]
 </span></span><span style="display:flex;"><span>    ys <span style="color:#ff7b72;font-weight:bold">=</span> map(<span style="color:#ff7b72">lambda</span> x: x <span style="color:#ff7b72;font-weight:bold">+</span> <span style="color:#a5d6ff">1</span>, xs)
 </span></span><span style="display:flex;"><span>    zs <span style="color:#ff7b72;font-weight:bold">=</span> sum(ys)
@@ -300,7 +315,6 @@ $$</p>
         
         
         
-
         
         
       </footer>
@@ -355,9 +369,8 @@ $$</p>
 
 
   
+
   
-
-
 
   
 
@@ -389,5 +402,4 @@ $$</p>
 
   
 </body>
-
 </html>
