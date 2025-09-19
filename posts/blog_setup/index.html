@@ -29,7 +29,7 @@ which resides in the gh-pages branch, following instructions from here:
 │ ...          │  │ │  ./sitemap.xmp   │
 │ ./public ────┼──┘ │  ...             │
 └──────────────┘    └──────────────────┘
-In the GitHub repo settings, under &ldquo;Page&rdquo;, you have to set the branch from which the site is being built, in my case: gh-pages.">
+Essentially, the public/ directory is a new git repo with the same remote as the main repo, but pointing to the gh-pages branch.">
 <meta name="keywords" content="blog,developer,personal">
 
 
@@ -37,18 +37,18 @@ In the GitHub repo settings, under &ldquo;Page&rdquo;, you have to set the branc
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Blog Setup">
   <meta name="twitter:description" content="Setup Link to heading This repo is organised with two branches: the main branch contains code needed to build the final site which resides in the gh-pages branch, following instructions from here:
-┌──────────────┐ ┌──────────────────┐ │ branch: main │ ┌►│ branch: gh-pages │ ├──────────────┤ │ ├──────────────────┤ │ ./content │ │ │ ./index.html │ │ ... │ │ │ ./sitemap.xmp │ │ ./public ────┼──┘ │ ... │ └──────────────┘ └──────────────────┘ In the GitHub repo settings, under “Page”, you have to set the branch from which the site is being built, in my case: gh-pages.">
+┌──────────────┐ ┌──────────────────┐ │ branch: main │ ┌►│ branch: gh-pages │ ├──────────────┤ │ ├──────────────────┤ │ ./content │ │ │ ./index.html │ │ ... │ │ │ ./sitemap.xmp │ │ ./public ────┼──┘ │ ... │ └──────────────┘ └──────────────────┘ Essentially, the public/ directory is a new git repo with the same remote as the main repo, but pointing to the gh-pages branch.">
 
 <meta property="og:url" content="https://alexandru-dinu.github.io/posts/blog_setup/">
   <meta property="og:site_name" content="Alexandru Dinu">
   <meta property="og:title" content="Blog Setup">
   <meta property="og:description" content="Setup Link to heading This repo is organised with two branches: the main branch contains code needed to build the final site which resides in the gh-pages branch, following instructions from here:
-┌──────────────┐ ┌──────────────────┐ │ branch: main │ ┌►│ branch: gh-pages │ ├──────────────┤ │ ├──────────────────┤ │ ./content │ │ │ ./index.html │ │ ... │ │ │ ./sitemap.xmp │ │ ./public ────┼──┘ │ ... │ └──────────────┘ └──────────────────┘ In the GitHub repo settings, under “Page”, you have to set the branch from which the site is being built, in my case: gh-pages.">
+┌──────────────┐ ┌──────────────────┐ │ branch: main │ ┌►│ branch: gh-pages │ ├──────────────┤ │ ├──────────────────┤ │ ./content │ │ │ ./index.html │ │ ... │ │ │ ./sitemap.xmp │ │ ./public ────┼──┘ │ ... │ └──────────────┘ └──────────────────┘ Essentially, the public/ directory is a new git repo with the same remote as the main repo, but pointing to the gh-pages branch.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2023-02-03T00:00:00+00:00">
-    <meta property="article:modified_time" content="2023-02-03T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-09-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-19T00:00:00+00:00">
     <meta property="article:tag" content="How-To">
 
 
@@ -170,13 +170,13 @@ In the GitHub repo settings, under &ldquo;Page&rdquo;, you have to set the branc
           <div class="date">
             <span class="posted-on">
               <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-              <time datetime="2023-02-03T00:00:00Z">
-                February 3, 2023
+              <time datetime="2025-09-19T00:00:00Z">
+                September 19, 2025
               </time>
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              2-minute read
+              3-minute read
             </span>
           </div>
           
@@ -208,13 +208,15 @@ which resides in the <a href="https://github.com/alexandru-dinu/alexandru-dinu.g
 │ ...          │  │ │  ./sitemap.xmp   │
 │ ./public ────┼──┘ │  ...             │
 └──────────────┘    └──────────────────┘
-</code></pre><p>In the GitHub repo settings, under &ldquo;Page&rdquo;, you have to set the branch from which the site is being built, in my case: <code>gh-pages</code>.</p>
+</code></pre><p>Essentially, the <code>public/</code> directory is a new git repo with the same remote as the main repo, but pointing to the <code>gh-pages</code> branch.</p>
+<p>In the GitHub repo settings, under &ldquo;Page&rdquo;, you have to set the branch from which the site is being built, in my case: <code>gh-pages</code>.</p>
 <p>For site generation, I am using <a href="https://gohugo.io/"  class="external-link" target="_blank" rel="noopener">hugo</a> with the <a href="https://github.com/luizdepra/hugo-coder"  class="external-link" target="_blank" rel="noopener">hugo-coder</a> theme.</p>
 <p>Instead of dealing with Go and hugo installation locally, I use a <a href="https://hub.docker.com/r/hugomods/hugo"  class="external-link" target="_blank" rel="noopener">docker image</a> which provides <code>hugo</code> and allows me to <code>serve</code> and <code>build</code> and the blog. This is defined in the <a href="https://github.com/alexandru-dinu/alexandru-dinu.github.io/blob/main/Justfile"  class="external-link" target="_blank" rel="noopener">Justfile</a>:</p>
 <pre tabindex="0"><code>set positional-arguments
 
-image := &#34;hugomods/hugo:0.131.0&#34;
+image := &#34;ghcr.io/gohugoio/hugo:v0.150.0&#34;
 
+# provides `hugo`
 @run *args:
     docker run --rm -t \
         -u $(id -u):$(id -g) \
@@ -224,15 +226,15 @@ image := &#34;hugomods/hugo:0.131.0&#34;
         $@
 
 serve:
-    just run hugo server --bind 0.0.0.0
+    just run server --source /src --bind 0.0.0.0
 
 build:
-    just run hugo
+    just run build --source /src
 
 push:
     (cd public/ \
         &amp;&amp; git add . \
-        &amp;&amp; git commit -m &#34;[$(date +&#39;%Y-%m-%dT%H:%M:%S%:z&#39;)] rebuild site&#34; \
+        &amp;&amp; git commit -m &#34;[$(date +&#39;%Y-%m-%dT%H:%M:%S&#39;)] rebuild site&#34; \
         &amp;&amp; git push -u origin gh-pages)
 </code></pre><p>When I&rsquo;m ready to push the built site to the <code>gh-pages</code> branch, I <em>just</em> use the <code>push</code> rule.</p>
 <h1 id="example">

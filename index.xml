@@ -6,8 +6,15 @@
     <description>Recent content on Alexandru Dinu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://alexandru-dinu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Setup</title>
+      <link>https://alexandru-dinu.github.io/posts/blog_setup/</link>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://alexandru-dinu.github.io/posts/blog_setup/</guid>
+      <description>&lt;h1 id=&#34;setup&#34;&gt;&#xA;  Setup&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#setup&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/alexandru-dinu/alexandru-dinu.github.io&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This repo&lt;/a&gt; is organised with two branches: the &lt;a href=&#34;https://github.com/alexandru-dinu/alexandru-dinu.github.io/tree/main&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;main branch&lt;/a&gt; contains code needed to build the final site&#xA;which resides in the &lt;a href=&#34;https://github.com/alexandru-dinu/alexandru-dinu.github.io/tree/gh-pages&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gh-pages branch&lt;/a&gt;, following instructions from &lt;a href=&#34;https://tiefenauer.github.io/blog/gh-pages-plugins/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;┌──────────────┐    ┌──────────────────┐&#xA;│ branch: main │  ┌►│ branch: gh-pages │&#xA;├──────────────┤  │ ├──────────────────┤&#xA;│ ./content    │  │ │  ./index.html    │&#xA;│ ...          │  │ │  ./sitemap.xmp   │&#xA;│ ./public ────┼──┘ │  ...             │&#xA;└──────────────┘    └──────────────────┘&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Essentially, the &lt;code&gt;public/&lt;/code&gt; directory is a new git repo with the same remote as the main repo, but pointing to the &lt;code&gt;gh-pages&lt;/code&gt; branch.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Thoughts</title>
       <link>https://alexandru-dinu.github.io/posts/thoughts/</link>
@@ -28,13 +35,6 @@
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://alexandru-dinu.github.io/projects/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/alexandru-dinu/igcc&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/alexandru-dinu/igcc&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Blog Setup</title>
-      <link>https://alexandru-dinu.github.io/posts/blog_setup/</link>
-      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://alexandru-dinu.github.io/posts/blog_setup/</guid>
-      <description>&lt;h1 id=&#34;setup&#34;&gt;&#xA;  Setup&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#setup&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/alexandru-dinu/alexandru-dinu.github.io&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This repo&lt;/a&gt; is organised with two branches: the &lt;a href=&#34;https://github.com/alexandru-dinu/alexandru-dinu.github.io/tree/main&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;main branch&lt;/a&gt; contains code needed to build the final site&#xA;which resides in the &lt;a href=&#34;https://github.com/alexandru-dinu/alexandru-dinu.github.io/tree/gh-pages&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gh-pages branch&lt;/a&gt;, following instructions from &lt;a href=&#34;https://tiefenauer.github.io/blog/gh-pages-plugins/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;┌──────────────┐    ┌──────────────────┐&#xA;│ branch: main │  ┌►│ branch: gh-pages │&#xA;├──────────────┤  │ ├──────────────────┤&#xA;│ ./content    │  │ │  ./index.html    │&#xA;│ ...          │  │ │  ./sitemap.xmp   │&#xA;│ ./public ────┼──┘ │  ...             │&#xA;└──────────────┘    └──────────────────┘&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In the GitHub repo settings, under &amp;ldquo;Page&amp;rdquo;, you have to set the branch from which the site is being built, in my case: &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
