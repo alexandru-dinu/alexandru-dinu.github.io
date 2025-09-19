@@ -2,10 +2,12 @@ baseURL = "https://alexandru-dinu.github.io"
 title = "Alexandru Dinu"
 languagecode = "en-us"
 defaultcontentlanguage = "en"
-paginate = 6
 theme = "hugo-coder"
 enableEmoji = true
 environment = "production"
+
+[pagination]
+pagerSize = 6
 
 [markup.highlight]
 style = "github-dark"

@@ -1,7 +1,8 @@
 set positional-arguments
 
-image := "hugomods/hugo:0.131.0"
+image := "ghcr.io/gohugoio/hugo:v0.150.0"
 
+# provides `hugo`
 @run *args:
     docker run --rm -t \
         -u $(id -u):$(id -g) \
@@ -11,10 +12,10 @@ image := "hugomods/hugo:0.131.0"
         $@
 
 serve:
-    just run hugo server --bind 0.0.0.0
+    just run server --source /src --bind 0.0.0.0
 
 build:
-    just run hugo
+    just run build --source /src
 
 push:
     (cd public/ \
