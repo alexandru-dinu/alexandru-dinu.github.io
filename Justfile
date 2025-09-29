@@ -4,7 +4,7 @@ image := "ghcr.io/gohugoio/hugo:v0.150.0"
 
 # provides `hugo`
 @run *args:
-    docker run --rm -t \
+    docker run --rm \
         -u $(id -u):$(id -g) \
         -v `pwd`:/src \
         -p 1313:1313 \
@@ -12,7 +12,7 @@ image := "ghcr.io/gohugoio/hugo:v0.150.0"
         $@
 
 serve:
-    just run server --source /src --bind 0.0.0.0
+    just run server --source /src --bind 0.0.0.0 --poll 500ms
 
 build:
     just run build --source /src
