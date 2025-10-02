@@ -41,21 +41,15 @@ weight = 2
 url = "https://gitlab.com/alexandru-dinu"
 
 [[params.social]]
-name = "Twitter"
-icon = "fa-brands fa-x-twitter fa-2x"
-weight = 3
-url = "https://twitter.com/alexandrudinu_"
-
-[[params.social]]
 name = "Mastodon"
 icon = "fa-brands fa-mastodon fa-2x"
-weight = 4
+weight = 3
 url = "https://sigmoid.social/@alexd"
 
 [[params.social]]
 name = "StackExchange"
 icon = "fa-brands fa-stack-exchange fa-2x"
-weight = 5
+weight = 4
 url = "https://stackexchange.com/users/3783845/alexandru-dinu?tab=accounts"
 
 # Menu links
