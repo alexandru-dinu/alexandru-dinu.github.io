@@ -10534,7 +10534,7 @@ strong {
 
 pre {
   display: block;
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-family: "SF Mono", Consolas, Liberation Mono, Menlo, monospace;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
@@ -10548,7 +10548,7 @@ pre {
     color: inherit; }
 
 code {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-family: "SF Mono", Consolas, Liberation Mono, Menlo, monospace;
   font-size: 1.6rem;
   font-weight: 400;
   border-radius: 0.6rem;
@@ -10709,7 +10709,7 @@ figure {
     margin: 0; }
 
 .avatar img {
-  width: 30rem;
+  width: 20rem;
   height: auto;
   border-radius: 50%; }
   @media only screen and (max-width: 768px) {
