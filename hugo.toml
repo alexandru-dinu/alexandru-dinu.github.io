@@ -52,6 +52,12 @@ icon = "fa-brands fa-stack-exchange fa-2x"
 weight = 4
 url = "https://stackexchange.com/users/3783845/alexandru-dinu?tab=accounts"
 
+[[params.social]]
+name = "Flickr"
+icon = "fa-brands fa-flickr fa-2x"
+weight = 5
+url = "https://www.flickr.com/photos/alexandru-dinu"
+
 # Menu links
 [[menu.main]]
 name = "Blog"
